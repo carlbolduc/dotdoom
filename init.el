@@ -34,13 +34,13 @@
        ;;hydra
        ;;indent-guides     ; highlighted indent columns
        ;;minimap           ; show a map of the code on the side
-       (modeline +light)         ; snazzy, Atom-inspired modeline, plus API
+       modeline          ; snazzy, Atom-inspired modeline, plus API
        ;;nav-flash         ; blink cursor line after big motions
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
        (popup +defaults)   ; tame sudden yet inevitable temporary windows
        ;;pretty-code       ; ligatures or substitute text with pretty symbols
-       ;;tabs              ; an tab bar for Emacs
+       ;;tabs              ; a tab bar for Emacs
        ;;treemacs          ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
        vc-gutter         ; vcs diff in the fringe
@@ -71,7 +71,7 @@
        vc                ; version-control and Emacs, sitting in a tree
 
        :term
-       ;;eshell            ; the elisp shell that works everywhere
+       eshell            ; the elisp shell that works everywhere
        ;;shell             ; simple shell REPL for Emacs
        ;;term              ; basic terminal emulator for Emacs
        ;;vterm             ; the best terminal emulation in Emacs
@@ -91,7 +91,7 @@
        (eval +overlay)     ; run code, run (also, repls)
        ;;gist              ; interacting with github gists
        lookup              ; navigate your code and its documentation
-       ;;lsp
+       lsp
        ;;macos             ; MacOS-specific commands
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
@@ -120,7 +120,7 @@
        ;;erlang            ; an elegant language for a more civilized age
        ;;ess               ; emacs speaks statistics
        ;;faust             ; dsp, but you get to keep your soul
-       ;;fsharp           ; ML stands for Microsoft's Language
+       ;;fsharp            ; ML stands for Microsoft's Language
        ;;fstar             ; (dependent) types and (monadic) effects and Z3
        ;;gdscript          ; the language you waited for
        ;;(go +lsp)         ; the hipster dialect
@@ -128,8 +128,8 @@
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ;
        ;;json              ; At least it ain't XML
-       ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
-       javascript        ; all(hope(abandon(ye(who(enter(here))))))
+       (java +lsp) ; the poster child for carpal tunnel syndrome
+       (javascript +lsp)        ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
        ;;latex             ; writing papers in Emacs has never been so fun
@@ -145,7 +145,7 @@
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
-       ;;python            ; beautiful is better than ugly
+       python            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
@@ -160,7 +160,7 @@
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
-       ;;web               ; the tubes
+       web               ; the tubes
        ;;yaml              ; JSON, but readable
 
        :email

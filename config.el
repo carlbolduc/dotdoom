@@ -60,5 +60,17 @@
 (setq mac-command-modifier 'meta)
 (setq mac-right-command-modifier 'meta)
 
+(setq lombok-jar-path
+      (expand-file-name
+        "~/.doom.d/vendor/lombok.jar"
+      )
+)
+(setq lsp-java-vmargs `(
+    "-Xmx1G"
+    ,(concat "-javaagent:" lombok-jar-path)
+    ,(concat "-Xbootclasspath/a:" lombok-jar-path)
+  )
+)
+
 (map! :leader "l" (cmd! (load-theme 'doom-one-light t)))
 (map! :leader "d" (cmd! (load-theme 'doom-one t)))
